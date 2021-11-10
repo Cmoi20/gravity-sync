@@ -130,7 +130,7 @@ function backup_remote_custom() {
         MESSAGE="${UI_BACKUP_PRIMARY} ${UI_CUSTOM_NAME}"
         echo_stat
         
-        CMD_TIMEOUT='15'
+        CMD_TIMEOUT='30'
         CMD_REQUESTED="sudo cp ${RIHOLE_DIR}/${CUSTOM_DNS} ${RIHOLE_DIR}/${CUSTOM_DNS}.backup"
         create_sshcmd
     fi
